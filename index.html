@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Matching Engine</title>
+  <link rel="stylesheet" href="/static/style.css?v=1.1">
+</head>
+<body>
+  <h1>Crypto Matching Engine</h1>
+
+  <!-- Best Bid/Offer -->
+  <section id="bbo-section">
+    <h2>Best Bid/Offer</h2>
+    <pre id="bbo"></pre>
+  </section>
+
+  <!-- Recent Trades -->
+  <section id="trades-section">
+    <h2>Recent Trades</h2>
+    <div id="trades"></div>
+  </section>
+
+  <!-- Place Order Form -->
+  <section id="order-form">
+    <h2>Place Order</h2>
+    <form id="submitForm">
+      <label>Side:
+        <select id="side">
+          <option value="buy">Buy</option>
+          <option value="sell">Sell</option>
+        </select>
+      </label>
+      <label>Type:
+        <select id="type">
+          <option value="limit">Limit</option>
+          <option value="market">Market</option>
+          <option value="ioc">IOC</option>
+          <option value="fok">FOK</option>
+        </select>
+      </label>
+      <label>Price: <input type="number" id="price" step="0.01" /></label>
+      <label>Quantity: <input type="number" id="qty" step="0.01" required /></label>
+      <button type="submit">Submit</button>
+    </form>
+    <pre id="order-response"></pre>
+  </section>
+
+  <!-- Cancel Order Form -->
+  <section id="cancel-order">
+    <h2>Cancel Order</h2>
+    <form id="cancelForm">
+      <label>Symbol:
+        <input type="text" id="cancel-symbol" value="BTC-USDT" required />
+      </label>
+      <label>Order ID:
+        <input type="text" id="cancel-order-id" required />
+      </label>
+      <button type="submit">Cancel Order</button>
+    </form>
+    <pre id="cancel-response"></pre>
+  </section>
+
+  <script src="/static/script.js?v=1.1"></script>
+</body>
+</html>

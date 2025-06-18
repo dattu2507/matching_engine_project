@@ -1,0 +1,59 @@
+body {
+  background-color: #121212;
+  color: #e0f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #00e5ff;
+}
+
+section {
+  background: #1e1e1e;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.2);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form select, form input {
+  padding: 8px;
+  margin-right: 10px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #00e5ff;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00bcd4;
+}
+
+pre {
+  background-color: #272727;
+  padding: 15px;
+  border-radius: 5px;
+  color: #e0f7fa;
+  overflow-x: auto;
+}
+
+#trades > div {
+  padding: 5px;
+  border-bottom: 1px solid #444;
+}
